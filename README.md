@@ -1,4 +1,4 @@
-\# Self-Correcting Coding Agent
+## Self-Correcting Coding Agent
 
 
 
@@ -6,7 +6,7 @@ An autonomous coding agent that takes a task ("fix this bug," "make this failing
 
 
 
-\## Results
+## Results
 
 
 
@@ -34,11 +34,11 @@ Full run logs: \[`eval/results/v2\_fullfile.json`](eval/results/v2\_fullfile.jso
 
 
 
-\## Architecture
+## Architecture
 
 
 
-\\```
+```
 
 &#x20;                ┌─────────────┐
 
@@ -80,7 +80,7 @@ Full run logs: \[`eval/results/v2\_fullfile.json`](eval/results/v2\_fullfile.jso
 
 &#x20;                 (up to N iterations)
 
-\\```
+```
 
 
 
@@ -88,7 +88,7 @@ All of the above is also exposed as MCP tools (`run\_task`, `run\_tests`), so an
 
 
 
-\## Design decisions worth knowing
+## Design decisions worth knowing
 
 
 
@@ -104,27 +104,27 @@ All of the above is also exposed as MCP tools (`run\_task`, `run\_tests`), so an
 
 
 
-\## Tech stack
+## Tech stack
 
 
 
-\- \*\*Python\*\* — core agent logic
+ \*\*Python\*\* — core agent logic
 
-\- \*\*Google Gemini API\*\* (`google-genai`) — Planner / Coder / Reviewer, behind a swappable `LLMClient` abstraction (originally built against Claude's API)
+\*\*Google Gemini API\*\* (`google-genai`) — Planner / Coder / Reviewer, behind a swappable `LLMClient` abstraction (originally built against Claude's API)
 
-\- \*\*Docker\*\* — isolated, network-disabled sandbox execution
+\*\*Docker\*\* — isolated, network-disabled sandbox execution
 
-\- \*\*MCP (Model Context Protocol)\*\* — exposes the agent as tools for external AI clients
+ \*\*MCP (Model Context Protocol)\*\* — exposes the agent as tools for external AI clients
 
-\- \*\*pytest\*\* — target test framework for the benchmark tasks
-
-
-
-\## Project structure
+\*\*pytest\*\* — target test framework for the benchmark tasks
 
 
 
-\\```
+## Project structure
+
+
+
+```
 
 coding-agent/
 
@@ -166,15 +166,15 @@ coding-agent/
 
 └── requirements.txt
 
-\\```
+```
 
 
 
-\## Setup
+## Setup
 
 
 
-\\```bash
+```bash
 
 python -m venv venv
 
@@ -194,17 +194,17 @@ python setup\_eval\_tasks.py
 
 python eval/harness.py --run-name my\_run
 
-\\```
+```
 
 
 
-\### Connect it to Claude Desktop (MCP)
+### Connect it to Claude Desktop (MCP)
 
 
 
 Add to your Claude Desktop config (Settings → Developer → Edit config):
 
-\\```json
+```json
 
 {
 
@@ -222,13 +222,13 @@ Add to your Claude Desktop config (Settings → Developer → Edit config):
 
 }
 
-\\```
+```
 
 Restart Claude Desktop, then ask it to use the `coding-agent` tool with a `task\_description`, `repo\_path`, `test\_command`, and `relevant\_files`.
 
 
 
-\## What's not finished
+## What's not finished
 
 
 
@@ -242,7 +242,7 @@ Restart Claude Desktop, then ask it to use the `coding-agent` tool with a `task\
 
 
 
-\## License
+## License
 
 
 
