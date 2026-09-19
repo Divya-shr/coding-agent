@@ -1,0 +1,9 @@
+{
+  "task_description": "is_adult in validators.py uses the wrong comparison operator, causing test_is_adult to fail. Fix it.",
+  "repo_path": "./eval/tasks/repos/wrong_comparison",
+  "test_command": "pytest -q",
+  "relevant_files": [
+    "validators.py",
+    "test_validators.py"
+  ]
+}

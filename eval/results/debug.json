@@ -1,0 +1,53 @@
+{
+  "run_name": "debug",
+  "total_tasks": 4,
+  "success_rate": 0.0,
+  "avg_iterations": 5.0,
+  "avg_wall_clock_seconds": 78.8,
+  "results": [
+    {
+      "task": "missing_return",
+      "success": false,
+      "iterations_used": 5,
+      "wall_clock_seconds": 90.4,
+      "tokens": {
+        "input": 1425,
+        "output": 349,
+        "calls": 6
+      }
+    },
+    {
+      "task": "off_by_one",
+      "success": false,
+      "iterations_used": 5,
+      "wall_clock_seconds": 109.1,
+      "tokens": {
+        "input": 1635,
+        "output": 527,
+        "calls": 6
+      }
+    },
+    {
+      "task": "sample_fix_bug",
+      "success": false,
+      "iterations_used": 5,
+      "wall_clock_seconds": 40.7,
+      "tokens": {
+        "input": 1450,
+        "output": 391,
+        "calls": 6
+      }
+    },
+    {
+      "task": "wrong_comparison",
+      "success": false,
+      "iterations_used": 5,
+      "wall_clock_seconds": 75.1,
+      "tokens": {
+        "input": 1389,
+        "output": 418,
+        "calls": 6
+      }
+    }
+  ]
+}

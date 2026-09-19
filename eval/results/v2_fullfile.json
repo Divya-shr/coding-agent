@@ -1,0 +1,53 @@
+{
+  "run_name": "v2_fullfile",
+  "total_tasks": 4,
+  "success_rate": 1.0,
+  "avg_iterations": 1.0,
+  "avg_wall_clock_seconds": 3.8,
+  "results": [
+    {
+      "task": "missing_return",
+      "success": true,
+      "iterations_used": 1,
+      "wall_clock_seconds": 4.3,
+      "tokens": {
+        "input": 521,
+        "output": 100,
+        "calls": 3
+      }
+    },
+    {
+      "task": "off_by_one",
+      "success": true,
+      "iterations_used": 1,
+      "wall_clock_seconds": 3.5,
+      "tokens": {
+        "input": 561,
+        "output": 177,
+        "calls": 3
+      }
+    },
+    {
+      "task": "sample_fix_bug",
+      "success": true,
+      "iterations_used": 1,
+      "wall_clock_seconds": 3.7,
+      "tokens": {
+        "input": 520,
+        "output": 142,
+        "calls": 3
+      }
+    },
+    {
+      "task": "wrong_comparison",
+      "success": true,
+      "iterations_used": 1,
+      "wall_clock_seconds": 3.6,
+      "tokens": {
+        "input": 508,
+        "output": 153,
+        "calls": 3
+      }
+    }
+  ]
+}

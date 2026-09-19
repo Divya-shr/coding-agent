@@ -1,0 +1,9 @@
+{
+  "task_description": "last_n_items in list_utils.py has an off-by-one bug causing test_last_n_items to fail. Fix it.",
+  "repo_path": "./eval/tasks/repos/off_by_one",
+  "test_command": "pytest -q",
+  "relevant_files": [
+    "list_utils.py",
+    "test_list_utils.py"
+  ]
+}

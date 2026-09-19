@@ -1,0 +1,6 @@
+{
+  "task_description": "The function `add` in math_utils.py has a bug that makes test_add fail. Fix it so the test passes.",
+  "repo_path": "./eval/tasks/repos/sample_fix_bug",
+  "test_command": "pytest -q",
+  "relevant_files": ["math_utils.py", "test_math_utils.py"]
+}

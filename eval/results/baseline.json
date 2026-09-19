@@ -1,0 +1,44 @@
+{
+  "run_name": "baseline",
+  "total_tasks": 4,
+  "success_rate": 0.0,
+  "avg_iterations": 1.25,
+  "avg_wall_clock_seconds": 5.7,
+  "results": [
+    {
+      "task": "missing_return",
+      "success": false,
+      "iterations_used": 5,
+      "wall_clock_seconds": 15.7,
+      "tokens": {
+        "input": 2359,
+        "output": 515,
+        "calls": 11
+      }
+    },
+    {
+      "task": "off_by_one",
+      "success": false,
+      "iterations_used": 0,
+      "wall_clock_seconds": 6.3,
+      "tokens": {},
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+    },
+    {
+      "task": "sample_fix_bug",
+      "success": false,
+      "iterations_used": 0,
+      "wall_clock_seconds": 0.5,
+      "tokens": {},
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+    },
+    {
+      "task": "wrong_comparison",
+      "success": false,
+      "iterations_used": 0,
+      "wall_clock_seconds": 0.4,
+      "tokens": {},
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+    }
+  ]
+}
